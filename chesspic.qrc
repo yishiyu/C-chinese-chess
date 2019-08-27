@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/board">
+        <file>pic/board.png</file>
+        <file>pic/qipan_dian.png</file>
+        <file>pic/qipan_hei_bing.png</file>
+        <file>pic/qipan_hei_che.png</file>
+        <file>pic/qipan_hei_ma.png</file>
+        <file>pic/qipan_hei_pao.png</file>
+        <file>pic/qipan_hei_shi.png</file>
+        <file>pic/qipan_hei_shuai.png</file>
+        <file>pic/qipan_hei_xiang.png</file>
+        <file>pic/qipan_hong_bing.png</file>
+        <file>pic/qipan_hong_che.png</file>
+        <file>pic/qipan_hong_ma.png</file>
+        <file>pic/qipan_hong_pao.png</file>
+        <file>pic/qipan_hong_shi.png</file>
+        <file>pic/qipan_hong_shuai.png</file>
+        <file>pic/qipan_hong_xiang.png</file>
+        <file>pic/qipan_jinggao_1.png</file>
+        <file>pic/qipan_jinggao_2.png</file>
+        <file>pic/qipan_jinggao_3.png</file>
+        <file>pic/qipan_piece_sel.png</file>
+        <file>pic/qipan_posflag.png</file>
+        <file>pic/qipan_posflag_bak.png</file>
+        <file>pic/shalou.png</file>
+        <file>pic/wufayidong.png</file>
+    </qresource>
+</RCC>

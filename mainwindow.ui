@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>bibibi的象棋</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="board">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>391</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/board.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_che.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess2">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_ma.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess9">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_che.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>8</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess8">
+    <property name="geometry">
+     <rect>
+      <x>308</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_ma.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess3">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_xiang.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess7">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_xiang.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess4">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_shi.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>3</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess6">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_shi.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>5</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess5">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>0</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_shuai.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>4</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess10">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>88</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_pao.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess11">
+    <property name="geometry">
+     <rect>
+      <x>308</x>
+      <y>88</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_pao.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess12">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>132</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>1</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess13">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>132</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess14">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>132</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>4</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess15">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>132</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess16">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>132</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hei_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>8</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess3_2">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_xiang.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess5_2">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_shuai.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess8_2">
+    <property name="geometry">
+     <rect>
+      <x>308</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_ma.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess4_2">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_shi.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess9_2">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_che.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>8</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess7_2">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_xiang.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>6</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess1_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_che.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess2_2">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_ma.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess6_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>396</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_shi.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>9</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess11_2">
+    <property name="geometry">
+     <rect>
+      <x>308</x>
+      <y>308</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_pao.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess10_2">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>308</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_pao.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess14_2">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>264</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess13_2">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>264</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess12_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>264</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess16_2">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>264</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>8</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="b_chess15_2">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>264</y>
+      <width>44</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="chesspic.qrc">:/board/pic/qipan_hong_bing.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="row" stdset="0">
+     <number>6</number>
+    </property>
+    <property name="rank" stdset="0">
+     <number>6</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>392</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>游戏</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="chesspic.qrc"/>
+ </resources>
+ <connections/>
+</ui>
